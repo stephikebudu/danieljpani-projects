@@ -5,7 +5,7 @@ Build logic to solidify understanding of these JavaScript concepts: Variables an
 ## Project
 
 Title: Grocery Store Inventory Management
-Challenge: Given an the store's inventory which is an array of objects, you are to process the data to answer the following questions as the manager:
+Challenge: Given the store's inventory which is an array of objects, you are to process the data to answer the following questions as the manager:
 
 1. Task 1 - What items are out of stock?
 2. Task 2 - What items are on discount?
