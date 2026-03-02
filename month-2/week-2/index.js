@@ -11,7 +11,9 @@ let activeDevices = [];
 /*
  * Write a regular function called deviceType. It should take a parameter: device (an object) and display the type (property) of the device (object) in the console.
 */
-
+function deviceType() {
+  return
+}
 
 
 
