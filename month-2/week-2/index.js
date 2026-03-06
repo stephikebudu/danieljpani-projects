@@ -14,6 +14,9 @@ let activeDevices = [];
 function deviceType(device) {
     console.log(`Device Type: ${device.type}`);
 }
+function deviceType() {
+  return
+}
 
 
 // Task 2 - Check for devices that are on
