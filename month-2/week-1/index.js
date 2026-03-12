@@ -36,12 +36,17 @@ function isOnDiscount() {
   // Write code below this line: Loop through inventory and check if price of each item in inventory is greater than 3. If yes, add item to discountedItems array created above
   for (let i = 0; i < inventory.length; i++) {
     // Example logic: if price is less than 2.0
-    if (inventory[i].price < 2.0) {
-      discountedItems.push(inventory[i].name);
+    function isOnDiscount() {
+    let discountedItems = [];
+
+    // Loop through inventory
+    for (let i = 0; i < inventory.length; i++) {
+
+        // Check if price is greater than 3
+        if (inventory[i].price > 3) {
+            discountedItems.push(inventory[i]);
+        }
     }
-  }
 
-  return discountedItems;
+    return discountedItems;
 }
-
-console.log(isOnDiscount());

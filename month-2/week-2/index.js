@@ -11,11 +11,10 @@ let activeDevices = [];
 /*
  * Write a regular function called deviceType. It should take a parameter: device (an object) and display the type (property) of the device (object) in the console.
 */
-function deviceType(device) {
-    console.log(`Device Type: ${device.type}`);
-}
-function deviceType() {
-  return
+function deviceType(devices) {
+    devices.map(function(device) {
+        console.log(device.type);
+    });
 }
 
 
