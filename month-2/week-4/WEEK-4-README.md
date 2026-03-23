@@ -3,11 +3,10 @@
 Answer questions to solidify understanding of these JavaScript concepts: Async/Await, Promises and Events.
 
 ## Project
-Title: Quiz
-Challenge: Given context and quiz questions, explain comprehensively:
-
-Question 1 - How `setTimeout()` works.
-Question 2 - What happens to an unresolved `Promise` object.
+Title: Quiz  
+Challenge: Given context and quiz questions, explain comprehensively:  
+Question 1 - How `setTimeout()` works.  
+Question 2 - What happens to an unresolved `Promise` object.  
 Question 3 - How tasks from events are fired.
 
 ## Guide

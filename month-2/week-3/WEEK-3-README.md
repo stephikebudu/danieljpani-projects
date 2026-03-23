@@ -4,8 +4,8 @@ Build logic to solidify understanding of these JavaScript concepts:
 Array & Object Destructuring, String Manipulation, Template Literals.
 
 ## Project
-Title: Order Labelling and Printing
-Challenge: Given a list of orders for a small business, use code to:
+Title: Order Labelling and Printing  
+Challenge: Given a list of orders for a small business, use code to:  
 
 Task 1 - Format name associated with each order.
 Task 2 - Generate a label for each order.
