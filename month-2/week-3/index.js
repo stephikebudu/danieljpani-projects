@@ -31,16 +31,13 @@ const formatName = (order) => {
 const generateLabel = (order) => {
     // 1. Destructure id, item, and customer from the order
     const { id, item, customer } = order;
-    
-    // 2. Destructure city from the customer
     const { city } = customer;
 
-    // 3. Fix: Pass the WHOLE order to formatName, not just customer
+    // 2. Fix applied: Passing the ENTIRE order, not just customer
     const fullName = formatName(order); 
 
-    // 4. Return the formatted string exactly as requested
+    // 3. Return the formatted string
     return `ORDER #${id}
 Customer: ${fullName} (From: ${city})
 Item: ${item}`;
 };
-  
