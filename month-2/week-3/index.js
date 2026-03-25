@@ -9,14 +9,16 @@ const orders = [
 /*
   * Create an arrow function called formatName for each order. Return their full name in Title Case (e.g., "alice smith" becomes "Alice Smith"). Update to lower case > Capitalize the first letter > Join both first and last with space.
 */
-const formatName = (customer) => {
-  const { firstName, lastName } = customer;
-  
-  // Capitalize first letter of each name and make the rest lowercase
-  const formattedFirstName = firstName.charAt(0).toUpperCase() + firstName.slice(1).toLowerCase();
-  const formattedLastName = lastName.charAt(0).toUpperCase() + lastName.slice(1).toLowerCase();
-  
-  return `${formattedFirstName} ${formattedLastName}`;
+const formatName = (order) => {
+    // 1. Convert everything to lowercase first (to handle inputs like "BOB")
+    const first = order.customer.firstName.toLowerCase();
+    const last = order.customer.lastName.toLowerCase();
+
+    // 2. Capitalize the first letter and join them
+    const formattedFirst = first.charAt(0).toUpperCase() + first.slice(1);
+    const formattedLast = last.charAt(0).toUpperCase() + last.slice(1);
+
+    return `${formattedFirst} ${formattedLast}`;
 };
 
 // Task 2 - Generate label for each order
@@ -27,11 +29,17 @@ const formatName = (customer) => {
   Item: Wireless Mouse
 */
 const generateLabel = (order) => {
-  const { id, item, customer } = order;
-  const { city } = customer;
-  const fullName = formatName(customer);
+    // 1. Destructure id, item, and customer from the order
+    const { id, item, customer } = order;
+    
+    // 2. Destructure city from the customer
+    const { city } = customer;
 
-  return `ORDER #${id}
+    // 3. Fix: Pass the WHOLE order to formatName, not just customer
+    const fullName = formatName(order); 
+
+    // 4. Return the formatted string exactly as requested
+    return `ORDER #${id}
 Customer: ${fullName} (From: ${city})
 Item: ${item}`;
 };
